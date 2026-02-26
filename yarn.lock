@@ -3997,38 +3997,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mitsuharu/react-native-sunmi-printer-library@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@mitsuharu/react-native-sunmi-printer-library@workspace:."
-  dependencies:
-    "@react-native/eslint-config": "npm:^0.74.85"
-    "@release-it/conventional-changelog": "npm:^8.0.1"
-    "@types/jest": "npm:^29.5.12"
-    "@types/react": "npm:^19.1.2"
-    "@types/react-native": "npm:^0.73.0"
-    "@types/react-test-renderer": "npm:^19.1.0"
-    "@typescript-eslint/eslint-plugin": "npm:^7.16.1"
-    "@typescript-eslint/parser": "npm:^7.16.1"
-    del-cli: "npm:^5.1.0"
-    eslint: "npm:^8.57.0"
-    eslint-config-prettier: "npm:^8.5.0"
-    eslint-plugin-react: "npm:^7.30.1"
-    jest: "npm:^29.7.0"
-    metro-react-native-babel-preset: "npm:^0.77.0"
-    prettier: "npm:^2.8.8"
-    react: "npm:19.0.0"
-    react-native: "npm:0.79.2"
-    react-native-builder-bob: "npm:^0.26.0"
-    react-test-renderer: "npm:^19.1.0"
-    release-it: "npm:^17.6.0"
-    turbo: "npm:^2.0.7"
-    typescript: "npm:^5.5.3"
-  peerDependencies:
-    react: "*"
-    react-native: "*"
-  languageName: unknown
-  linkType: soft
-
 "@nicolo-ribaudo/eslint-scope-5-internals@npm:5.1.1-v1":
   version: 5.1.1-v1
   resolution: "@nicolo-ribaudo/eslint-scope-5-internals@npm:5.1.1-v1"
@@ -4246,6 +4214,38 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@popmenu/react-native-sunmi-printer-library@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@popmenu/react-native-sunmi-printer-library@workspace:."
+  dependencies:
+    "@react-native/eslint-config": "npm:^0.74.85"
+    "@release-it/conventional-changelog": "npm:^8.0.1"
+    "@types/jest": "npm:^29.5.12"
+    "@types/react": "npm:^19.1.2"
+    "@types/react-native": "npm:^0.73.0"
+    "@types/react-test-renderer": "npm:^19.1.0"
+    "@typescript-eslint/eslint-plugin": "npm:^7.16.1"
+    "@typescript-eslint/parser": "npm:^7.16.1"
+    del-cli: "npm:^5.1.0"
+    eslint: "npm:^8.57.0"
+    eslint-config-prettier: "npm:^8.5.0"
+    eslint-plugin-react: "npm:^7.30.1"
+    jest: "npm:^29.7.0"
+    metro-react-native-babel-preset: "npm:^0.77.0"
+    prettier: "npm:^2.8.8"
+    react: "npm:19.0.0"
+    react-native: "npm:0.79.2"
+    react-native-builder-bob: "npm:^0.26.0"
+    react-test-renderer: "npm:^19.1.0"
+    release-it: "npm:^17.6.0"
+    turbo: "npm:^2.0.7"
+    typescript: "npm:^5.5.3"
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  languageName: unknown
+  linkType: soft
+
 "@react-native-community/cli-clean@npm:13.6.9":
   version: 13.6.9
   resolution: "@react-native-community/cli-clean@npm:13.6.9"
@@ -4454,7 +4454,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-native-community/cli-platform-ios@npm:18.0.0, @react-native-community/cli-platform-ios@npm:^18.0.0":
+"@react-native-community/cli-platform-ios@npm:18.0.0":
   version: 18.0.0
   resolution: "@react-native-community/cli-platform-ios@npm:18.0.0"
   dependencies:
@@ -13147,7 +13147,6 @@ __metadata:
     "@babel/runtime": "npm:^7.27.1"
     "@react-native-community/cli": "npm:^18.0.0"
     "@react-native-community/cli-platform-android": "npm:^18.0.0"
-    "@react-native-community/cli-platform-ios": "npm:^18.0.0"
     "@react-native/babel-preset": "npm:0.79.2"
     "@react-native/eslint-config": "npm:0.79.2"
     "@react-native/metro-config": "npm:0.79.2"

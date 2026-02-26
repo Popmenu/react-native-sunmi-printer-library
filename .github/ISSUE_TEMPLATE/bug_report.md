@@ -29,7 +29,6 @@ If applicable, add screenshots to help explain your problem.
 **Device (please complete the following information):**
  - [MUST] Model: [e.g. SUNMI V2 PRO]
  - [MUST] GMS: enable or disable
- - OS: [e.g. iOS8.1]
  - Android [e.g. 7.1]
  - SUNMI OS: [e.g. 3.6.23]
  - firmware: [e.g. 754]
