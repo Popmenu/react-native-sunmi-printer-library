@@ -1,17 +1,17 @@
-# @mitsuharu/react-native-sunmi-printer-library
+# @popmenu/react-native-sunmi-printer-library
 
 React Native module that support to print for SUNMI mobile thermal printer devices.
 
 ## Installation
 
 ```shell
-npm install @mitsuharu/react-native-sunmi-printer-library
+npm install @popmenu/react-native-sunmi-printer-library
 ```
 
 or 
 
 ```shell
-yarn add @mitsuharu/react-native-sunmi-printer-library
+yarn add @popmenu/react-native-sunmi-printer-library
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ yarn add @mitsuharu/react-native-sunmi-printer-library
 You see `example` directory for details.
 
 ```typescript
-import * as SunmiPrinterLibrary from '@mitsuharu/react-native-sunmi-printer-library'
+import * as SunmiPrinterLibrary from '@popmenu/react-native-sunmi-printer-library'
 
 await SunmiPrinterLibrary.prepare()
 await SunmiPrinterLibrary.printText('Print Text')

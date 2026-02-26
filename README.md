@@ -1,4 +1,4 @@
-# @mitsuharu/react-native-sunmi-printer-library
+# @popmenu/react-native-sunmi-printer-library
 
 React Native module that supports for SUNMI mobile printer devices.
 
@@ -18,13 +18,13 @@ I validate it with GMS enable and developable SUNMI V2 PRO and SUNMI V2s as foll
 ## Installation
 
 ```shell
-npm install @mitsuharu/react-native-sunmi-printer-library
+npm install @popmenu/react-native-sunmi-printer-library
 ```
 
 or 
 
 ```shell
-yarn add @mitsuharu/react-native-sunmi-printer-library
+yarn add @popmenu/react-native-sunmi-printer-library
 ```
 
 ## Usage
@@ -34,7 +34,7 @@ You see `example` directory for details.
 ### prepare
 
 ```typescript
-import * as SunmiPrinterLibrary from '@mitsuharu/react-native-sunmi-printer-library'
+import * as SunmiPrinterLibrary from '@popmenu/react-native-sunmi-printer-library'
 ```
 
 ```typescript
