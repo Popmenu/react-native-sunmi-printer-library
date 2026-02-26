@@ -558,6 +558,12 @@ class SunmiPrinterLibraryModule(reactContext: ReactApplicationContext) :
       val pureBase64Encoded = base64.substring(base64.indexOf(",") + 1)
       val decodedBytes = Base64.decode(pureBase64Encoded, Base64.DEFAULT)
       val decodedBitmap = BitmapFactory.decodeByteArray(decodedBytes, 0, decodedBytes.size)
+      
+      if (decodedBitmap == null) {
+        promise.reject("0", "native#printBitmapBase64 decodeByteArray returned null (base64=$pureBase64Encoded)")
+        return
+      }
+
       val w = decodedBitmap.width
       val h = decodedBitmap.height
       val image = Bitmap.createScaledBitmap(decodedBitmap, pixelWidth, pixelWidth / w * h, false)
@@ -575,6 +581,12 @@ class SunmiPrinterLibraryModule(reactContext: ReactApplicationContext) :
       val pureBase64Encoded = base64.substring(base64.indexOf(",") + 1)
       val decodedBytes = Base64.decode(pureBase64Encoded, Base64.DEFAULT)
       val decodedBitmap = BitmapFactory.decodeByteArray(decodedBytes, 0, decodedBytes.size)
+
+      if (decodedBitmap == null) {
+        promise.reject("0", "native#printBitmapBase64Custom decodeByteArray returned null (base64=$pureBase64Encoded)")
+        return
+      }
+
       val w = decodedBitmap.width
       val h = decodedBitmap.height
       val image = Bitmap.createScaledBitmap(decodedBitmap, pixelWidth, pixelWidth / w * h, false)
@@ -583,6 +595,31 @@ class SunmiPrinterLibraryModule(reactContext: ReactApplicationContext) :
       promise.reject("0", "native#printBitmapBase64Custom is failed. " + e.message)
     }
   }
+
+    @ReactMethod
+    fun printBitmapFileCustom(path: String, pixelWidth: Int, type: Int, promise: Promise) {
+      validatePrinterService(promise)
+      try {
+        val callback = makeInnerResultCallback(promise, "native#printBitmapFileCustom is failed.")
+        val purePath = path.replace("file://", "")
+        val decodedBitmap = BitmapFactory.decodeFile(purePath)
+
+        if (decodedBitmap == null) {
+          promise.reject("0", "native#printBitmapFileCustom decodeFile returned null (path=$purePath)")
+          return
+        }
+
+        val w = decodedBitmap.width
+        val h = decodedBitmap.height
+
+        val scaledHeight = kotlin.math.max(1, (pixelWidth.toFloat() / w.toFloat() * h.toFloat()).toInt())
+        val image = Bitmap.createScaledBitmap(decodedBitmap, pixelWidth, scaledHeight, false)
+
+        printerService?.printBitmapCustom(image, type, callback)
+      } catch (e: Exception) {
+        promise.reject("0", "native#printBitmapFileCustom is failed. " + e.message)
+      }
+    }
 
   /**
    * printerService が有効かどうか調べる

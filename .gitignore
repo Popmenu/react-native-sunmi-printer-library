@@ -43,9 +43,6 @@ local.properties
 !debug.keystore
 .kotlin/
 
-# Cocoapods
-#
-example/ios/Pods
 
 # Ruby
 example/vendor/

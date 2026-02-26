@@ -1,6 +1,6 @@
 {
-  "name": "@mitsuharu/react-native-sunmi-printer-library",
-  "version": "2.4.0",
+  "name": "@popmenu/react-native-sunmi-printer-library",
+  "version": "1.0.0",
   "description": "React Native module that support SUNMI mobile printer devices.",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
@@ -11,10 +11,6 @@
     "src",
     "lib",
     "android",
-    "ios",
-    "cpp",
-    "*.podspec",
-    "!ios/build",
     "!android/build",
     "!android/gradle",
     "!android/gradlew",
@@ -30,7 +26,7 @@
     "test": "jest",
     "typecheck": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
-    "clean": "del-cli android/build example/android/build example/android/app/build example/ios/build lib",
+    "clean": "del-cli android/build example/android/build example/android/app/build lib",
     "prepare": "bob build",
     "release": "release-it",
     "install:safe-chain": "npm install -g @aikidosec/safe-chain@1.1.5 && safe-chain setup && ./scripts/relogin.sh",
@@ -42,13 +38,13 @@
     "sunmi",
     "printer"
   ],
-  "repository": "https://github.com/mitsuharu/react-native-sunmi-printer-library",
-  "author": "Mitsuharu Emoto <mthr1982@gmail.com> (https://github.com/mitsuharu)",
+  "repository": "https://github.com/Popmenu/react-native-sunmi-printer-library",
+  "author": "Popmenu (https://github.com/Popmenu)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mitsuharu/react-native-sunmi-printer-library/issues"
+    "url": "https://github.com/Popmenu/react-native-sunmi-printer-library/issues"
   },
-  "homepage": "https://github.com/mitsuharu/react-native-sunmi-printer-library#readme",
+  "homepage": "https://github.com/Popmenu/react-native-sunmi-printer-library#readme",
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"
   },

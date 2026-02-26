@@ -1,12 +1,7 @@
 import { NativeModules } from 'react-native'
 import { prepare, printText } from '../index'
 
-/*
- * [wantfix] It requires better test code.
- * It also recommends print test to use actual device.
- */
 
-// ネイティブモジュールのモックを作成
 jest.mock('react-native', () => ({
   NativeModules: {
     SunmiPrinterLibrary: {
@@ -27,18 +22,16 @@ jest.mock('react-native', () => ({
 }))
 
 describe('SunmiPrinterLibrary', () => {
-  it('プリンターを準備できること', async () => {
+  it('should be able to prepare the printer', async () => {
     const result = await prepare()
     expect(result).toBe(true)
   })
 
-  it('テキストを印刷できること', async () => {
-    const text = 'こんにちは、プリンター！'
+  it('should be able to print text', async () => {
+    const text = 'Hello, printer!'
     await printText(text)
     expect(NativeModules.SunmiPrinterLibrary.printText).toHaveBeenCalledWith(
       text
     )
   })
-
-  // 他の機能に対するテストも追加
 })
