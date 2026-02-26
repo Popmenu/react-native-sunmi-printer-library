@@ -1,4 +1,4 @@
-# @mitsuharu/react-native-sunmi-printer-library
+# @popmenu/react-native-sunmi-printer-library
 
 ## Table of contents
 

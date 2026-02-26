@@ -7,7 +7,7 @@ import {
   Text,
   DeviceEventEmitter,
 } from 'react-native'
-import * as SunmiPrinterLibrary from '@mitsuharu/react-native-sunmi-printer-library'
+import * as SunmiPrinterLibrary from '@popmenu/react-native-sunmi-printer-library'
 import { Button } from './components/Button'
 import { useToast } from 'react-native-toast-notifications'
 import {
@@ -57,7 +57,7 @@ const Component: React.FC<ComponentProps> = ({
       <ScrollView style={styles.scrollView}>
         <View style={styles.sectionContainer}>
           <Text style={styles.sectionTitle}>
-            @mitsuharu/react-native-sunmi-printer-library
+            @popmenu/react-native-sunmi-printer-library
           </Text>
           <Button text="[MUST] prepare" onPress={onPressPrepare} />
           <Button
